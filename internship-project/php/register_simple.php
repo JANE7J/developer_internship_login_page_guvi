@@ -88,7 +88,7 @@ try {
     }
     
     // Connect to MySQL
-    $pdo = new PDO("mysql:host=localhost;dbname=internship_project", "root", "Neeraja@04");
+    $pdo = new PDO("mysql:host=localhost;dbname=internship_project", "root", ""); // Empty password for default XAMPP
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Check if username already exists

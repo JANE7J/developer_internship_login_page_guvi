@@ -51,7 +51,7 @@ $(document).ready(function() {
             };
             
             // Send login request
-            const response = await AjaxHelper.post('login.php', loginData);
+            const response = await AjaxHelper.post('login_simple.php', loginData);
             
             if (response.success) {
                 // Store session data in localStorage

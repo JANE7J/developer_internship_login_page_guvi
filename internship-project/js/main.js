@@ -2,7 +2,7 @@
 // Common utilities and session management
 
 // API Base URL - Update this according to your server configuration
-const API_BASE_URL = 'http://localhost/internship-project/php';
+const API_BASE_URL = 'php'; // Use relative path for XAMPP
 
 // Session management using localStorage
 class SessionManager {
