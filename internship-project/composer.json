@@ -1,0 +1,47 @@
+{
+    "name": "internship/user-registration-system",
+    "description": "A complete user registration and profile management system for internship project",
+    "type": "project",
+    "keywords": ["registration", "login", "profile", "php", "mysql", "mongodb", "redis"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Internship Developer",
+            "email": "dev@guvi.in"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "mongodb/mongodb": "^1.12",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-redis": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "InternshipProject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InternshipProject\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "post-install-cmd": [
+            "echo 'Installation completed successfully!'",
+            "echo 'Please configure your database settings in php/config.php'"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
